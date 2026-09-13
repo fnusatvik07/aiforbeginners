@@ -1,0 +1,23 @@
+# AI Fundamentals in 3 Hours - Data Sense workshop
+# Python 3.10+ required (LangChain 1.0 does not support 3.9 or below)
+
+# --- core LangChain stack ---
+langchain>=1.0,<2.0
+langchain-core>=1.0,<2.0
+langchain-openai>=1.0
+langchain-text-splitters>=1.0
+
+# --- agent runtime (create_agent runs on LangGraph under the hood) ---
+langgraph>=1.0,<2.0
+
+# --- observability: free tier, strongly recommended ---
+langsmith>=0.3.0
+
+# --- used in the tokens notebook to show how text is split ---
+tiktoken>=0.7
+
+# --- required by InMemoryVectorStore for similarity search (notebooks 04 and 06) ---
+numpy>=1.26
+
+# --- notebook environment ---
+jupyter

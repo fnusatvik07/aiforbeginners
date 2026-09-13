@@ -1,0 +1,20 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="AI roles" id="ai-roles">
+    <mxGraphModel dx="1400" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1"
+                  arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="640"
+                  background="#1B1A18" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="t" value="Three layers of AI work &#8212; you work on exactly one" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#F0EEE6;fontSize=20;fontFamily=Helvetica;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="30" width="800" height="30" as="geometry"/></mxCell>
+        <mxCell id="l1" value="Layer 1 &#8212; Model builders&#10;Train the foundation models: transformers, GPUs, pre-training, RLHF&#10;OpenAI &#183; Anthropic &#183; Google DeepMind &#183; Meta &#183; Mistral" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#232220;strokeColor=#3A3730;strokeWidth=2;fontColor=#F0EEE6;fontSize=13;fontFamily=Helvetica;verticalAlign=middle;align=left;dashed=0;spacingLeft=8;spacingRight=8" vertex="1" parent="1"><mxGeometry x="60" y="90" width="880" height="110" as="geometry"/></mxCell>
+        <mxCell id="p1" value="~0.1%&#10;of AI jobs" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#2A2220;strokeColor=#C97A7A;strokeWidth=2;fontColor=#F0EEE6;fontSize=13;fontFamily=Helvetica;verticalAlign=middle;align=center;dashed=0;spacingLeft=8;spacingRight=8" vertex="1" parent="1"><mxGeometry x="970" y="115" width="170" height="60" as="geometry"/></mxCell>
+        <mxCell id="l2" value="Layer 2 &#8212; AI engineers &#183; YOU ARE HERE&#10;Build and ship software on top of those models&#10;Prompts &#183; RAG &#183; tools &#183; agents &#183; evals &#183; latency &#183; cost &#183; guardrails&#10;Every product company: fintech, health, retail, SaaS, consulting" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#2E2320;strokeColor=#CC785C;strokeWidth=2;fontColor=#F0EEE6;fontSize=14;fontFamily=Helvetica;verticalAlign=middle;align=left;dashed=0;spacingLeft=8;spacingRight=8" vertex="1" parent="1"><mxGeometry x="60" y="230" width="880" height="150" as="geometry"/></mxCell>
+        <mxCell id="p2" value="~90%&#10;of AI jobs" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#3A2A24;strokeColor=#CC785C;strokeWidth=2;fontColor=#F0EEE6;fontSize=15;fontFamily=Helvetica;verticalAlign=middle;align=center;dashed=0;fontStyle=1;spacingLeft=8;spacingRight=8" vertex="1" parent="1"><mxGeometry x="970" y="275" width="170" height="70" as="geometry"/></mxCell>
+        <mxCell id="l3" value="Layer 3 &#8212; Operators &amp; power users&#10;Use AI products well: prompting, workflow automation, no-code&#10;Marketing, ops, analysts, support, founders" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#232220;strokeColor=#3A3730;strokeWidth=2;fontColor=#F0EEE6;fontSize=13;fontFamily=Helvetica;verticalAlign=middle;align=left;dashed=0;spacingLeft=8;spacingRight=8" vertex="1" parent="1"><mxGeometry x="60" y="410" width="880" height="110" as="geometry"/></mxCell>
+        <mxCell id="p3" value="growing&#10;everyone else" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#20262A;strokeColor=#7E9FB4;strokeWidth=2;fontColor=#F0EEE6;fontSize=13;fontFamily=Helvetica;verticalAlign=middle;align=center;dashed=0;spacingLeft=8;spacingRight=8" vertex="1" parent="1"><mxGeometry x="970" y="435" width="170" height="60" as="geometry"/></mxCell>
+        <mxCell id="f" value="This workshop is Layer 2, from the ground up. Layer 1 is fascinating and almost certainly not your job." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#D4A27F;fontSize=13;fontFamily=Helvetica;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="550" width="900" height="30" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

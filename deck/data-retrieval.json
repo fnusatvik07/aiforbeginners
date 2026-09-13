@@ -1,0 +1,41 @@
+{
+ "query": "can I get my money back?",
+ "hits": [
+  {
+   "score": 0.385,
+   "source": "refund_policy.md",
+   "heading": "Refund processing time",
+   "snippet": "Once a returned item is received and inspected at our Pune warehouse, refunds are issued within **14 business days**. Th"
+  },
+  {
+   "score": 0.352,
+   "source": "refund_policy.md",
+   "heading": "Shipping charges",
+   "snippet": "Original shipping charges are refunded only when the return is due to our error, a wrong item, a damaged item, or a late"
+  },
+  {
+   "score": 0.332,
+   "source": "account_help.md",
+   "heading": "Failed payment but money debited",
+   "snippet": "If money was debited and the order did not confirm, the transaction was auto-reversed by the payment gateway. Banks typi"
+  },
+  {
+   "score": 0.309,
+   "source": "refund_policy.md",
+   "heading": "Nimbus Retail: Returns & Refunds Policy",
+   "snippet": "Last updated: 3 March 2026  ## Return window Customers may return most items within **30 days of delivery**. The 30 days"
+  },
+  {
+   "score": 0.306,
+   "source": "account_help.md",
+   "heading": "Why was my card declined?",
+   "snippet": "The three most common causes are: an expired card, an incorrect CVV, and the bank's own risk checks rejecting an online "
+  },
+  {
+   "score": 0.259,
+   "source": "account_help.md",
+   "heading": "Nimbus Retail: Account & Payments Help",
+   "snippet": "Last updated: 27 January 2026  ## Accepted payment methods UPI, credit and debit cards (Visa, Mastercard, RuPay, Amex), "
+  }
+ ]
+}

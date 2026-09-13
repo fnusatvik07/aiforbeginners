@@ -1,0 +1,49 @@
+{
+ "question": "My order 48213 hasn't arrived. How many days until it's due, and what's your policy if it's late?",
+ "trace": [
+  {
+   "t": "user",
+   "text": "My order 48213 hasn't arrived. How many days until it's due, and what's your policy if it's late?"
+  },
+  {
+   "t": "action",
+   "tool": "get_order_status",
+   "args": {
+    "order_id": "48213"
+   }
+  },
+  {
+   "t": "action",
+   "tool": "search_policies",
+   "args": {
+    "query": "late delivery policy"
+   }
+  },
+  {
+   "t": "observation",
+   "tool": "get_order_status",
+   "text": "{\"status\": \"shipped\", \"item\": \"Table lamp\", \"total_inr\": 2499, \"courier\": \"Delhivery\", \"eta\": \"2026-09-16\", \"order_id\": \"48213\"}"
+  },
+  {
+   "t": "observation",
+   "tool": "search_policies",
+   "text": "[shipping_faq.md] ## Free shipping threshold\nOrders above **Rs 999** ship free on standard delivery. Below that, standard shipping is\nRs 49 flat across India.\n\n## Track\n[account_he"
+  },
+  {
+   "t": "action",
+   "tool": "days_until",
+   "args": {
+    "date_iso": "2026-09-16"
+   }
+  },
+  {
+   "t": "observation",
+   "tool": "days_until",
+   "text": "{\"days_from_today\": 4}"
+  },
+  {
+   "t": "final",
+   "text": "Your order 48213, a table lamp, is due to arrive in 4 days on 2026-09-16. Regarding late delivery, I found no specific policy details in the documents I searched. Would you like me to connect you with a support agent for more help on late delivery issues?"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "points": [
+  {
+   "w": "refund",
+   "g": "refund",
+   "x": 0.1048,
+   "y": 1.0
+  },
+  {
+   "w": "money back",
+   "g": "refund",
+   "x": 0.0,
+   "y": 0.8867
+  },
+  {
+   "w": "return an item",
+   "g": "refund",
+   "x": 0.4823,
+   "y": 0.771
+  },
+  {
+   "w": "reimbursement",
+   "g": "refund",
+   "x": 0.1268,
+   "y": 0.8865
+  },
+  {
+   "w": "delivery",
+   "g": "ship",
+   "x": 1.0,
+   "y": 0.9237
+  },
+  {
+   "w": "shipping",
+   "g": "ship",
+   "x": 0.8886,
+   "y": 0.8947
+  },
+  {
+   "w": "when will it arrive",
+   "g": "ship",
+   "x": 0.9057,
+   "y": 0.7218
+  },
+  {
+   "w": "courier",
+   "g": "ship",
+   "x": 0.8836,
+   "y": 0.6972
+  },
+  {
+   "w": "credit card",
+   "g": "pay",
+   "x": 0.2413,
+   "y": 0.4436
+  },
+  {
+   "w": "payment failed",
+   "g": "pay",
+   "x": 0.1622,
+   "y": 0.5933
+  },
+  {
+   "w": "UPI",
+   "g": "pay",
+   "x": 0.6056,
+   "y": 0.5619
+  },
+  {
+   "w": "wifi password",
+   "g": "other",
+   "x": 0.3902,
+   "y": 0.0
+  },
+  {
+   "w": "office printer",
+   "g": "other",
+   "x": 0.6956,
+   "y": 0.3072
+  }
+ ],
+ "variance_explained": 0.308,
+ "sample_vectors": {
+  "refund": [
+   -0.017,
+   0.031,
+   0.004,
+   0.06,
+   -0.019,
+   -0.051,
+   -0.036,
+   0.053
+  ],
+  "money back": [
+   0.021,
+   0.025,
+   -0.026,
+   0.039,
+   -0.052,
+   -0.021,
+   0.001,
+   0.037
+  ],
+  "wifi password": [
+   -0.006,
+   -0.064,
+   -0.023,
+   -0.045,
+   -0.021,
+   -0.041,
+   -0.043,
+   0.043
+  ]
+ },
+ "sims_to_money_back": {
+  "money back": 1.0,
+  "refund": 0.6,
+  "payment failed": 0.451,
+  "reimbursement": 0.45,
+  "return an item": 0.362,
+  "credit card": 0.339,
+  "shipping": 0.286,
+  "courier": 0.257,
+  "UPI": 0.237,
+  "delivery": 0.233,
+  "office printer": 0.206,
+  "when will it arrive": 0.152,
+  "wifi password": 0.123
+ }
+}
