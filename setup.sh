@@ -55,6 +55,16 @@ echo "==> registering the Jupyter kernel"
 "$VENV/bin/python" -m ipykernel install --user \
   --name aiforbeginners --display-name "Python (AI Fundamentals)" >/dev/null
 
+# Keep notebook outputs out of commits. They make diffs unreadable and can leak
+# whatever a cell happened to print. Your local copy keeps its results.
+if [ -d .git ]; then
+  git config filter.strip-notebook-output.clean \
+    "$VENV/bin/python -c \"import sys,json; nb=json.load(sys.stdin); [c.update(outputs=[], execution_count=None) for c in nb['cells'] if c['cell_type']=='code']; json.dump(nb, sys.stdout, indent=1)\""
+  git config filter.strip-notebook-output.smudge cat
+  git config filter.strip-notebook-output.required false
+  echo "==> registered the notebook output stripping filter"
+fi
+
 if [ ! -f .env ]; then
   cp .env.example .env
   echo "==> created .env from the example. PUT YOUR OPENAI KEY IN IT before running anything."
