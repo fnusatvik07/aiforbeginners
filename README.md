@@ -17,6 +17,10 @@ A hands on workshop for people who have never written code that talks to a langu
 
 `LLM calls` &nbsp;·&nbsp; `Messages` &nbsp;·&nbsp; `Tokens & cost` &nbsp;·&nbsp; `Structured output` &nbsp;·&nbsp; `RAG` &nbsp;·&nbsp; `Tool calling` &nbsp;·&nbsp; `Agents`
 
+<br>
+
+### [▶ &nbsp;Open the slide deck](https://fnusatvik07.github.io/aiforbeginners/AI-Fundamentals-Workshop.html)
+
 </div>
 
 <br>
@@ -24,7 +28,7 @@ A hands on workshop for people who have never written code that talks to a langu
 ## Quick start
 
 ```bash
-git clone <this-repo> && cd aiforbeginners
+git clone https://github.com/fnusatvik07/aiforbeginners.git && cd aiforbeginners
 ./setup.sh                 # creates .venv, installs everything, registers the Jupyter kernel
 # put your OpenAI key in .env
 ./start.sh                 # launches Jupyter from this project's environment
@@ -84,7 +88,8 @@ Each one stands alone, builds on the last, and ends with exercises.
 
 ## The deck
 
-Open `AI-Fundamentals-Workshop.html` in any browser. No server, no install, no network.
+**[Open it live](https://fnusatvik07.github.io/aiforbeginners/AI-Fundamentals-Workshop.html)**,
+or open `AI-Fundamentals-Workshop.html` locally. No server, no install, no network needed.
 
 <table>
 <tr><td><kbd>→</kbd> <kbd>Space</kbd></td><td>Next step, then next slide</td>
