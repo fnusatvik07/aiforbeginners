@@ -1,0 +1,3 @@
+# Keep notebook diffs readable and stop half-run outputs from being committed.
+# Requires the filter to be registered once, see setup.sh.
+*.ipynb filter=strip-notebook-output
