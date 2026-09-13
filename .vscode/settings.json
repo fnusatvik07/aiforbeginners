@@ -1,5 +1,5 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.defaultInterpreterPath": "~/.venvs/aiforbeginners/bin/python",
   "python.terminal.activateEnvironment": true,
   "jupyter.notebookFileRoot": "${fileDirname}",
   "notebook.kernelPicker.type": "all"

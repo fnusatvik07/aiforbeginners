@@ -181,6 +181,33 @@ If it reports `using project venv: NO`, switch kernel:
 </details>
 
 <details>
+<summary><b>The kernel hangs, or takes 30+ seconds to start (macOS)</b></summary>
+<br>
+
+If this project sits in **Desktop or Documents with iCloud sync turned on**, a virtual
+environment placed inside it becomes thousands of small files behind the sync daemon. Every
+kernel start is routed through iCloud, and when the disk is near full macOS evicts those
+files to the cloud and re-downloads them on access. Jupyter crawls or hangs outright.
+
+Measured on a Mac with Desktop synced and the disk 96% full:
+
+| venv location | kernel ready |
+|:--|--:|
+| inside the iCloud folder | 37.9s, then the first cell hung |
+| on local disk | 0.4s |
+
+`setup.sh` detects this and puts the venv in `~/.venvs/<project>` automatically. If you set
+things up by hand and hit it, just rerun:
+
+```bash
+./setup.sh
+```
+
+Confirm which one you are on with `%run ../check_env.py`. It reports `venv in iCloud`.
+
+</details>
+
+<details>
 <summary><b>A call fails with <code>Connection error</code></b></summary>
 <br>
 
@@ -200,7 +227,9 @@ A clean venv built by `setup.sh` never hits this.
 <br>
 
 ```bash
-python3.12 -m venv .venv && source .venv/bin/activate
+# on macOS, if this folder is synced to iCloud, put the venv OUTSIDE it
+python3.12 -m venv ~/.venvs/aiforbeginners
+source ~/.venvs/aiforbeginners/bin/activate
 pip install -r requirements.txt
 python -m ipykernel install --user --name aiforbeginners --display-name "Python (AI Fundamentals)"
 cp .env.example .env        # then add your key

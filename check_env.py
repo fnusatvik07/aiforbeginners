@@ -1,20 +1,26 @@
-"""Run this if a notebook cell fails. Tells you exactly which Python is running.
+"""Run this if a notebook cell fails or hangs. Tells you exactly what is wrong.
 
-    In a terminal:      .venv/bin/python check_env.py
-    In a notebook cell: %run ../check_env.py
+    In a notebook cell:  %run ../check_env.py
+    In a terminal:       ./start.sh is easier, but: python check_env.py
 """
 import sys, os
 from pathlib import Path
 
+here = Path(__file__).resolve().parent
 print("python executable :", sys.executable)
 print("python version    :", sys.version.split()[0])
 
-here = Path(__file__).resolve().parent
-expected = here / ".venv" / "bin" / "python"
+vp = here / ".venvpath"
+expected = Path(vp.read_text().strip()) / "bin" / "python" if vp.exists() else here / ".venv" / "bin" / "python"
 ok = Path(sys.executable).resolve() == expected.resolve()
 print("using project venv:", "YES" if ok else "NO  <-- wrong kernel selected")
 if not ok:
     print("                    expected", expected)
+
+# A venv inside an iCloud synced folder is the usual cause of a hanging kernel.
+icloud = Path.home() / "Library" / "Mobile Documents" / "com~apple~CloudDocs"
+in_icloud = (icloud / "Desktop").exists() and str(expected).startswith(str(Path.home() / "Desktop"))
+print("venv in iCloud    :", "YES  <-- this makes the kernel hang, rerun ./setup.sh" if in_icloud else "no")
 
 print("working directory :", os.getcwd())
 
